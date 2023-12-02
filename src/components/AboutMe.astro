@@ -1,34 +1,57 @@
 ---
-
+import AboutContainer from "./AboutContainer.astro";
+import AboutHeader from "./AboutHeader.astro";
+import AboutHeaderBunny from "./AboutHeaderBunny.astro";
 ---
 
-<section class="sm:h-96 flex justify-center sm:flex-row items-center sm:gap-28 sm:border-b sm:px-10 bg-purple-950/25 border-b-purple-900 flex-col gap-2 h-fit pt-12 pb-3 px-4">
-  <header class="flex h-[248px] w-fit flex-col gap-4">
-    <img src="me.jfif" alt="me" class="h-44 rounded-lg outline-4 outline-dashed outline-purple-900" />
-    <div class="max-h-[1px]">
-        <img class="relative h-12 -top-8 -left-6" src="/aboutme/cat.gif" alt="cat"/>
+<AboutContainer>
+  <AboutHeader>
+    <img
+      src="/aboutme/logo.png"
+      alt="me"
+      class="h-44 outline-4 outline-dashed outline-purple-900 rounded-full"
+    />
+    <AboutHeaderBunny />
+    <div
+      class="flex justify-between items-center gap-4 h-14 py-2 px-2 bg-purple-900 border-2 border-purple-700"
+    >
+      <img class="h-8" src="/aboutme/pixelab.png" alt="pixelab" />
+      <img class="h-8" src="/aboutme/photoshop.png" alt="photoshop" />
+      <img class="h-8" src="/aboutme/capcut.png" alt="capcut" />
     </div>
-    <div class="w-[148px] flex justify-between items-center gap-4 h-14 py-2 px-2 bg-purple-900 border-2 border-purple-700">
-        <img class="h-8" src="/aboutme/pixelab.png" alt="pixelab">
-        <img class="h-8" src="/aboutme/photoshop.png" alt="photoshop">
-        <img class="h-8" src="/aboutme/capcut.png" alt="capcut">
-    </div>
-  </header>
+  </AboutHeader>
 
-  <footer class="flex h-[248px] sm:justify-between justify-center gap-4 items-center flex-col">
-    <h1 class="text-white lg:font-bold lg:text-lg hidden">I'm Luh</h1>
-    <h2 class="font-bold text-5xl shadow-sm mb-2 text-purple-500/50">
+  <footer
+    class="flex sm:h-[248px]  sm:justify-between justify-center gap-4 items-center flex-col"
+  >
+    <h1 class="font-bold text-5xl shadow-sm mb-2 mt-4 text-purple-500/50">
       Design UX & UI
-    </h2>
+    </h1>
     <p
       class="text-white/60 px-4 max-w-[400px] bg-purple-900 border-2 border-purple-700 py-2 rounded-lg"
     >
       Transformando ideias em experiências visuais memoráveis, cada projeto é
       uma oportunidade para explorar, inovar e aprimorar minhas habilidades.
     </p>
-  </footer>
-</section>
 
+    <div class="bg-purple-900 flex px-4 py-2 rounded-lg items-center gap-4 text-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="#000000"
+        viewBox="0 0 256 256"
+        ><path
+          d="M247.37,89.15l-37,113.33a8,8,0,0,1-11.71,4.39c-.23-.14-25.8-14.87-70.68-14.87s-70.45,14.73-70.7,14.88a8,8,0,0,1-11.68-4.4L8.62,89.12A12.11,12.11,0,0,1,25.52,74.5l50.19,25,41.92-69.66a12.11,12.11,0,0,1,20.74,0l41.92,69.66,50.21-25a12.1,12.1,0,0,1,16.87,14.66Z"
+        ></path></svg
+      >
+
+      <span>
+        Lider da comunide <strong>PHOENIX</strong>.
+      </span>
+    </div>
+  </footer>
+</AboutContainer>
 <style>
   .text-shadow {
     text-shadow: 2px 20px 4px rgba(0, 0, 0, 0.5);
