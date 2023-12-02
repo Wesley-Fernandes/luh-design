@@ -2,6 +2,7 @@
 import AboutContainer from "./AboutContainer.astro";
 import AboutHeader from "./AboutHeader.astro";
 import AboutHeaderBunny from "./AboutHeaderBunny.astro";
+import AboutJob from "./AboutJob.astro";
 ---
 
 <AboutContainer>
@@ -22,7 +23,7 @@ import AboutHeaderBunny from "./AboutHeaderBunny.astro";
   </AboutHeader>
 
   <footer
-    class="flex sm:h-[248px]  sm:justify-between justify-center gap-4 items-center flex-col"
+    class="flex sm:h-[248px] sm:justify-between justify-center gap-4 items-center flex-col"
   >
     <h1 class="font-bold text-5xl shadow-sm mb-2 mt-4 text-purple-500/50">
       Design UX & UI
@@ -34,22 +35,7 @@ import AboutHeaderBunny from "./AboutHeaderBunny.astro";
       uma oportunidade para explorar, inovar e aprimorar minhas habilidades.
     </p>
 
-    <div class="bg-purple-900 flex px-4 py-2 rounded-lg items-center gap-4 text-white">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="#000000"
-        viewBox="0 0 256 256"
-        ><path
-          d="M247.37,89.15l-37,113.33a8,8,0,0,1-11.71,4.39c-.23-.14-25.8-14.87-70.68-14.87s-70.45,14.73-70.7,14.88a8,8,0,0,1-11.68-4.4L8.62,89.12A12.11,12.11,0,0,1,25.52,74.5l50.19,25,41.92-69.66a12.11,12.11,0,0,1,20.74,0l41.92,69.66,50.21-25a12.1,12.1,0,0,1,16.87,14.66Z"
-        ></path></svg
-      >
-
-      <span>
-        Lider da comunide <strong>PHOENIX</strong>.
-      </span>
-    </div>
+    <AboutJob />
   </footer>
 </AboutContainer>
 <style>
