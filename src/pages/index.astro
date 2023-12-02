@@ -1,0 +1,32 @@
+---
+import AboutMe from "../components/AboutMe.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body class="bg-[#121120]">
+    <Header />
+    <main class="overflow-y-auto h-[calc(100vh-64px)]">
+      <AboutMe />
+      <ul
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 px-2 py-2">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </ul>
+    </main>
+  </body>
+</html>
